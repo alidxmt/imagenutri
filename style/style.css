@@ -1,0 +1,36 @@
+.center {
+    margin: auto;
+    width: 660px;
+    border: 1px solid #baceabbd;
+    padding: 25px;
+    text-align: center;
+    border-radius: 25px;
+    /* background-image: url("app-img/bg.jpg"); */
+    background-color: rgb(244, 255, 240);
+    }
+.btn{
+    width: 140px;
+    height: 30px;
+    display:none;
+    margin-left: auto;
+    margin-right: auto;
+}
+table {
+font-family: arial, sans-serif;
+border-collapse: collapse;
+width:620px;
+display: none;
+margin-left: auto;
+margin-right: auto;
+
+}
+
+td, th {
+border: 1px solid #dddddd;
+text-align: left;
+padding: 8px;
+}
+
+tr:nth-child(even) {
+background-color: #ebe6b4;
+}
