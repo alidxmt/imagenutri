@@ -43,7 +43,32 @@ function get_img_id() {
 }
 
 
+function anim() {
+    loading_messsage = document.getElementById('loading-messsage')
 
+    rand = Math.floor(Math.random() * 1000)+500
+
+    loading_messsage.innerHTML =  '...loading...'
+    setTimeout(function () {
+      loading_messsage.innerHTML = loading_messsage.innerHTML.replace('...loading...','...getting data (category and size) from api...');},rand);
+    
+    setTimeout(function () {
+      loading_messsage.innerHTML = loading_messsage.innerHTML.replace('...getting data (category and size) from api...','...evaluaing nutrition intakes...')
+      console.log(i)}, rand+3000);
+
+    
+    setTimeout(function () {
+      loading_messsage.innerHTML = loading_messsage.innerHTML.replace('...evaluaing nutrition intakes...','prediction has been completed.')
+      }, rand+5000);
+
+        setTimeout(function () {
+      loading_messsage.innerHTML = loading_messsage.innerHTML.replace('...evaluaing nutrition intakes...','prediction has been completed.');
+      for (vas of nutrs_json[img_id]) {change_table(vas)}}, rand+7000);
+        
+      
+
+
+}
 
 function get_nut_data(){
     img_id = get_img_id()
@@ -53,7 +78,8 @@ function get_nut_data(){
     document.getElementById('cat-text').innerText ='Category of the food is: '+cats_txt
     document.getElementById('nut-table').style.display='block'
     document.getElementById('nut-table').innerHTML = tab_inner;
-    for (vas of nutrs_json[img_id]) {change_table(vas)}
+    anim(img_id)
+    
     
     
   }
@@ -78,4 +104,6 @@ tb_row= tb_row.replace(_st,_va)
 document.getElementById('nut-table').innerHTML += tb_row
     
 }    
+
+
 
