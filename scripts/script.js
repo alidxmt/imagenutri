@@ -65,7 +65,7 @@ function anim(img_id) {
       loading_messsage.innerHTML = loading_messsage.innerHTML.replace('...evaluaing nutrition intakes...','prediction has been completed.');
       for (vas of nutrs_json[img_id]) {change_table(vas)}; 
       changeStyle('main-div-in',1);
-      document.getElementById('image-label').innerHTML='Please choose another image:'
+      //document.getElementById('image-label').innerHTML='Please choose another image:'
 
 
         
@@ -78,7 +78,7 @@ function anim(img_id) {
 
 function get_nut_data(){
     img_id = get_img_id()
-    changeStyle('main-div-in',.86)
+    changeStyle('main-div-in',.66)
     cats_txt = cat_names(img_id).join()
     nut_str = ''
     //for (const ca in cat_names(img_id)) {nut_str += nutrs_json[ca].join('|')}
