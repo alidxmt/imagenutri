@@ -75,7 +75,7 @@ function get_nut_data(){
     cats_txt = cat_names(img_id).join()
     nut_str = ''
     //for (const ca in cat_names(img_id)) {nut_str += nutrs_json[ca].join('|')}
-    document.getElementById('cat-text').innerText ='Category of the food is: '+cats_txt
+    //document.getElementById('cat-text').innerText ='Category of the food is: '+cats_txt
     document.getElementById('nut-table').style.display='block'
     document.getElementById('nut-table').innerHTML = tab_inner;
     anim(img_id)
