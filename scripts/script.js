@@ -64,6 +64,7 @@ tab_inner = '<tr><th>name</th><th>serving size</th><th>calories</th><th>total fa
 function change_table(vas) {
 tb_row = '<tr><td>-name</td><td>-serving_size</td><td>-calories</td><td>-total_fat</td><td>-saturated_fat</td><td>-cholesterol</td><td>-sodium</td><td>-choline</td></tr>'
 vas.forEach((_va, index) => {console.log(tb_row)
+  x = ['-name','-serving_size','-calories','-total_fat','-saturated_fat','-cholesterol','-sodium','-choline']
   const _st = x[index];
   console.log(_va, _st);
 tb_row= tb_row.replace(_va,_st)
