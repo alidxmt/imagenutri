@@ -1,3 +1,4 @@
+console.log('updated')
 image_id = ''
 eve = ''
 img_cat = {6331:[1184],
