@@ -5,8 +5,7 @@ img_cat = {6331:[1184],
     6483:[1967, 1113, 2730, 1069],
     6497:[1791, 1010]}
 idlist = [1184,1013, 1849, 1572, 1040, 2734,1967, 1113, 2730, 1069,1791, 1010]
-catlist = ['Sugar Melon','Chips, french fries','Hamburger','Hamburger bun','Salad, leaf / salad, green','Ketchup','Salmon','Leek','Sauce, cream','Tomato, raw ','Chicken, wing','Potatoes steamed']
-catlist = catlist.map(v => v.toLowerCase())
+catlist = ['sugar melon','chips, french fries','hamburger','hamburger bun','halad, leaf / salad, green','hetchup','halmon','leek','sauce, cream','tomato, raw ','chicken, wing','potatoes steamed']
 console.log(catlist )
 catid_catname = {}
 i=0
