@@ -67,7 +67,7 @@ function anim(img_id) {
       changeStyle('output',1);
       //document.getElementById('image-label').innerHTML='Please choose another image:'
 
-
+        loading_messsage.innerHTML = loading_messsage.innerHTML.replace('prediction has been completed.','');
         
         }, rand+7000);
         
