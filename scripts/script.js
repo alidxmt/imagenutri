@@ -63,7 +63,14 @@ vas.forEach((_va, index) => {console.log(inh)
 inh= inh.replace(_va,_st)
 });
 document.getElementById('nut-table').innerHTML += inh
-
-
+function change(vas) {
+ihn = '<tr><td>-name</td><td>-serving_size</td><td>-calories</td><td>-total_fat</td><td>-saturated_fat</td><td>-cholesterol</td><td>-sodium</td><td>-choline</td></tr>'
+vas.forEach((_va, index) => {console.log(inh)
+  const _st = x[index];
+  console.log(_va, _st);
+inh= inh.replace(_va,_st)
+});
+document.getElementById('nut-table').innerHTML += inh
     
+}    
 }
