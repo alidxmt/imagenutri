@@ -6,6 +6,7 @@ img_cat = {6331:[1184],
     6497:[1791, 1010]}
 idlist = [1184,1013, 1849, 1572, 1040, 2734,1967, 1113, 2730, 1069,1791, 1010]
 catlist = ['sugar melon','chips, french fries','hamburger','hamburger bun','halad, leaf / salad, green','hetchup','halmon','leek','sauce, cream','tomato, raw ','chicken, wing','potatoes steamed']
+catlist = ['melon', 'potato', 'hamburger meat', 'hamburger bun', 'salad', 'ketchup', 'salmon', 'leek', 'sauce', 'tomato', 'chicken wing', 'potato']
 console.log(catlist )
 catid_catname = {}
 i=0
