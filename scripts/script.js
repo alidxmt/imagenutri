@@ -43,7 +43,7 @@ function get_img_id() {
 }
 
 
-function anim() {
+function anim(img_id) {
     loading_messsage = document.getElementById('loading-messsage')
 
     rand = Math.floor(Math.random() * 1000)+500
