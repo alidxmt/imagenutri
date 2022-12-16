@@ -62,12 +62,12 @@ function anim(img_id) {
       }, rand+5000);
 
         setTimeout(function () {
-      loading_messsage.innerHTML = loading_messsage.innerHTML.replace('...evaluaing nutrition intakes...','prediction has been completed.');
+      loading_messsage.innerHTML = loading_messsage.innerHTML.replace('prediction has been completed.','');
+
       for (vas of nutrs_json[img_id]) {change_table(vas)}; 
       changeStyle('output',1);
       //document.getElementById('image-label').innerHTML='Please choose another image:'
 
-        loading_messsage.innerHTML = loading_messsage.innerHTML.replace('prediction has been completed.','');
         
         }, rand+7000);
         
