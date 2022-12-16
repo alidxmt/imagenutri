@@ -67,7 +67,7 @@ vas.forEach((_va, index) => {console.log(tb_row)
   x = ['-name','-serving_size','-calories','-total_fat','-saturated_fat','-cholesterol','-sodium','-choline']
   const _st = x[index];
   console.log(_va, _st);
-tb_row= tb_row.replace(_va,_st)
+tb_row= tb_row.replace(_st,_va)
 });
 document.getElementById('nut-table').innerHTML += tb_row
     
