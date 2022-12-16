@@ -40,7 +40,7 @@ function get_nut_data(){
     img_id = get_img_id()
     cats_txt = cat_names(img_id).join()
     nut_str = ''
-    for (const ca in cat_names(img_id)) {nut_str += nutrs_json[ca].join('|')}
+    //for (const ca in cat_names(img_id)) {nut_str += nutrs_json[ca].join('|')}
     document.getElementById('cat-text').innerText ='Category of the food is: '+cats_txt +'|||'+nut_str
     document.getElementById('nut-table').style.display='block'
   }
