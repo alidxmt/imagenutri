@@ -46,7 +46,7 @@ function get_nut_data(){
     document.getElementById('cat-text').innerText ='Category of the food is: '+cats_txt
     document.getElementById('nut-table').style.display='block'
     document.getElementById('nut-table').innerHTML = tab_inner;
-    for (vas of nutr_json[img_id]) {change_table(vas)}
+    for (vas of nutrs_json[img_id]) {change_table(vas)}
     
     
   }
