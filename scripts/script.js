@@ -46,7 +46,7 @@ function get_img_id() {
 function anim(img_id) {
     loading_messsage = document.getElementById('loading-messsage')
 
-    rand = Math.floor(Math.random() * 1000)+500
+    rand = Math.floor(Math.random() * 1000)
 
     loading_messsage.innerHTML =  '...loading...'
     setTimeout(function () {
@@ -54,12 +54,12 @@ function anim(img_id) {
     
     setTimeout(function () {
       loading_messsage.innerHTML = loading_messsage.innerHTML.replace('...getting data (category and size) from api...','...evaluaing nutrition intakes...')
-      console.log(i)}, rand+3000);
+      console.log(i)}, rand+1000);
 
     
     setTimeout(function () {
       loading_messsage.innerHTML = loading_messsage.innerHTML.replace('...evaluaing nutrition intakes...','prediction has been completed.')
-      }, rand+5000);
+      }, rand+3000);
 
         setTimeout(function () {
       loading_messsage.innerHTML = loading_messsage.innerHTML.replace('prediction has been completed.','');
@@ -69,7 +69,7 @@ function anim(img_id) {
       //document.getElementById('image-label').innerHTML='Please choose another image:'
 
         
-        }, rand+7000);
+        }, rand+5000);
         
       
 
